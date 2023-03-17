@@ -1,0 +1,14 @@
+#reviews div {
+  margin-bottom: 1.25em;
+}
+#reviews p {
+  margin: 0;
+  font-style: italic;
+}
+#reviews time {
+  color: red;
+}
+#reviews .comment{
+  color: blue;
+  font-style: normal;
+}

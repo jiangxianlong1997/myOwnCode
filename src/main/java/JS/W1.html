@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Share Your Travels -- New York - Central Park</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/html5shiv.js"></script>
+</head>
+<script>
+  for(let i = 0; i < 10; i++) {
+    if(i === 5){
+      console.log(i);
+      continue;
+      console.log("hello");
+    }
+    if ( i === 8 ) {
+      console.log(i);
+      break;// loop terminates, so “i” will never reach the value 9.
+    }
+  }
+  const x = {
+    "age": 24,
+    "name": "xianlong",
+    "s": 23
+  };
+
+  function get(x) {
+    return x.age + x.s;
+  }
+  console.log(get(x))
+  const inputArr = [23, 9, 14, 2, 28, 19, 3, 15, 9, 25, 2, 4, 9, 10];
+
+  //var size = inputArr.length;
+  function mean(inputArr){
+    let total = 0;
+    for(let i = 0; i < inputArr.length; i++) {
+      total += inputArr[i];
+    }
+    return total/inputArr.length
+  }
+
+  //冒泡排序
+  function median(inputArr) {
+    const array = new Array(inputArr.length);
+    for(let i = 0; i < inputArr.length; i++) {
+      array[i] = inputArr[i];
+    }
+    // for(var i = 0; i < inputArr.length; i++) {
+    //     for(var j = i; j < inputArr.length; j++) {
+    //         if(array[j] < array[i]) {
+    //             var temp = array[i];
+    //             array[i] = array[j];
+    //             array[j] = temp;
+    //         }
+    //     }
+    // }
+    array.sort((a,b)=> a - b);
+    let result;
+    if(array.length%2 === 0) {
+      result = (array[inputArr.length/2] + array[(inputArr.length)/2 - 1])/2;
+    }
+    else {
+      result = array[Math.floor(inputArr.length/2)];
+    }
+    return result;
+  }
+
+  function mode(inputArr) {
+    // const obj = {}
+    // for (let key of inputArr) {
+    //   if(obj[key]) {
+    //     obj[key]++
+    //   } else {
+    //     obj[key] = 1
+    //   }
+    // }
+    // let max_num = 0
+    // let mode
+    // for (let val in obj) {
+    //   if (max_num < obj[val]) {
+    //     max_num = obj[val]
+    //     mode = val
+    //   }
+    // }
+    // return mode
+    const obj = {};
+
+    for(let key of inputArr) {
+      if(!obj[key]) {
+        obj[key] = 1;
+        //console.log(key)
+      } else {
+        obj[key]++;
+      }
+    }
+    let max_num = 0
+    let mode
+    for (let val in obj) {
+      if(obj[val] > max_num) {
+        max_num = obj[val]
+        mode = val
+        console.log(mode)
+      }
+    }
+    console.log(obj)
+    return mode
+  }
+
+  console.log(mean(inputArr))
+  console.log(median(inputArr))
+  console.log(mode(inputArr))
+</script>
+<body>
+<h1>Share Your Travels</h1>
+<h2>New York - Central Park</h2>
+<p>Photo by Randy Connolly</p>
+<p>This photo of Conservatory Pond in
+  <a href="http://www.centralpark.com/">Central Park</a>
+  New York City was taken on October 22, 2011 with a
+  <strong>Canon EOS 30D</strong> camera.
+</p>
+<img src="images/central-park.jpg" alt="Central Park" />
+<h3>Reviews</h3>
+<div>
+  <p>By Ricardo on <time>September 15, 2012</time></p>
+  <p>Easy on the HDR buddy.</p>
+</div>
+<div>
+  <p>By Susan on <time>October 1, 2012</time></p>
+  <p>I love Central Park.</p>
+  <p><small>Copyright &copy; 2012 Share Your Travels</small></p>
+</div>
+
+</body>
+</html>
