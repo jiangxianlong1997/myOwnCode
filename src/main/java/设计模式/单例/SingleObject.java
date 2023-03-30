@@ -3,7 +3,7 @@ package 设计模式.单例;
 public class SingleObject {
 
   //恶汉式
-  private static SingleObject instance = new SingleObject();
+  private static final SingleObject instance = new SingleObject();
 
   private SingleObject() {
   }

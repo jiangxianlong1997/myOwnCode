@@ -20,8 +20,8 @@ public class selectionsort {
     return array;
   }
 
-  public static void main(String args[]) {
-    int a[] = {1, 3, 6, 0, 2};
+  public static void main(String[] args) {
+    int[] a = {1, 3, 6, 0, 2};
     select(a);
     for (int i : a) {
       System.out.println(i);

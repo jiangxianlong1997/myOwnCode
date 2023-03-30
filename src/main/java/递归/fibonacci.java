@@ -12,8 +12,8 @@ public class fibonacci {
     return getfibo(input - 1) + getfibo(input - 2);
   }
 
-  public static void main(String args[]) {
-    System.out.println(getfibo(6));
+  public static void main(String[] args) {
+    System.out.println(getfibo(5));
   }
 }
     

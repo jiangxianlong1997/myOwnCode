@@ -2,12 +2,6 @@ package Equals_hashcode;
 
 public class equals {
 
-//equals对内容比较， == 对地址比较
-  @Override
-  public int hashCode(){
-    return 0;
-  }
-
   public static void main(String[] args) {
 //    ArrayList<Integer> list = new ArrayList<>();
 //    list.add(1);
@@ -20,7 +14,13 @@ public class equals {
     System.out.println(a);
     System.out.println(a++);
     System.out.println(a);
-    System.out.println(s.substring(1,3));
+    System.out.println(s.substring(1, 3));
+  }
+
+  //equals对内容比较， == 对地址比较
+  @Override
+  public int hashCode() {
+    return 0;
   }
 
 }

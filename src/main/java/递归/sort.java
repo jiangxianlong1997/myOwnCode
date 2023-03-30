@@ -21,8 +21,8 @@ public class sort {
     }
   }
 
-  public static void main(String args[]) {
-    int a[] = {1, 2, 3};
+  public static void main(String[] args) {
+    int[] a = {1, 2, 3};
     pai(a, 0, 3);
   }
 }

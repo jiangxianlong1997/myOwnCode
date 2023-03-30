@@ -18,25 +18,26 @@ public class i_sort {
 //    x = ++i;
 //    System.out.println(x);//2
 //    System.out.println(i);//2
-    for(int j=0; j<5; j++){
-      for(int i=0; i<5; i++){
-        if(i == 0){
-            System.out.println(i);
+    for (int j = 0; j < 5; j++) {
+      for (int i = 0; i < 5; i++) {
+        if (i == 0) {
+          System.out.println(i);
           break;//(1)
-      }
+        }
       }
       System.out.println("跳出1层for循环到这啦");
-      if(j == 0){
+      if (j == 0) {
         System.out.println("终结者");
         break;//(2)
       }
     }
-    double a = 25/2;
+    double a = 25 / 2;
     System.out.println(a);
     boolean counter = false;
     for (int j = 0; j < 5; j++) {
-      if(j == 1) {
+      if (j == 1) {
         counter = true;
+        break;
       }
     }
     System.out.println(counter);

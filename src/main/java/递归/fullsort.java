@@ -31,8 +31,8 @@ public class fullsort {
     }
   }
 
-  public static void main(String args[]) {
-    char a[] = {'1', '2', '3'};
+  public static void main(String[] args) {
+    char[] a = {'1', '2', '3'};
     fullPermutation(a, 0);
   }
 }

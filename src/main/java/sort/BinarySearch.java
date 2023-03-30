@@ -22,7 +22,7 @@ public class BinarySearch {
   }
 
   public static void main(String[] args) {
-    int[] arr = {2,5,6,3,6};
+    int[] arr = {2, 5, 6, 3, 6};
     System.out.println(binarySearch(6, arr));
 
   }

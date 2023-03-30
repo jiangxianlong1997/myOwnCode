@@ -1,0 +1,41 @@
+[2. 两数相加](/problems/add-two-numbers/)
+
+### 解题思路
+
+用两个指针 $p1$ 和 $p2$ 分别遍历两个链表，用 $carry$ 记录当前位置两个指针指向的节点的和的进位，并同时向后遍历即可。
+
+注意，如果所有的节点都计算完后，还有进位，最后一个进位也需要保存下来。
+
+### 代码
+
+* python
+
+```python
+
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode(-1)
+        p = dummy
+        carry = 0  # 保存进位
+        p1 = l1
+        p2 = l2
+        while p1 or p2:
+            first, second = 0, 0
+            if p1:
+                first = p1.val
+                p1 = p1.next
+            if p2:
+                second = p2.val
+                p2 = p2.next
+            result = carry + first + second
+            p.next = ListNode(result % 10)
+            carry = result // 10
+            p = p.next
+            
+        # 如果所有的节点都计算完后，还有进位，也需要保存下来
+        if carry:
+            p.next = ListNode(carry)
+                
+        return dummy.next
+```
+

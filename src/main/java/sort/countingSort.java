@@ -39,7 +39,7 @@ public class countingSort {
     return array;
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {6, 5, 2, 1, 8, 0, 2, 1, 1, 0, 0, 8, 8, 5000};
     CountingSort(a);
     for (int i : a) {

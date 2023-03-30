@@ -14,9 +14,7 @@ public class ArrayListSort {
     arrayList.add(3);
     arrayList.sort(Comparator.naturalOrder());
     arrayList.sort(Comparator.reverseOrder());
-    arrayList.forEach((i) -> {
-      System.out.println(i);
-    });
+    arrayList.forEach(System.out::println);
   }
 
 }

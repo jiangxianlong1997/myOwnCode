@@ -1,12 +1,34 @@
 package 链表;
 
-public class linkedListWriteByMe <T> {
+public class linkedListWriteByMe<T> {
 
   private Node head;
   private int size;
+
   public linkedListWriteByMe() {
     this.head = null;
     this.size = 0;
+  }
+
+  public static void main(String[] args) {
+    linkedListWriteByMe linkedListWriteByMe = new linkedListWriteByMe();
+    for (int i = 0; i < 5; i++) {
+      linkedListWriteByMe.addFirst(i);
+    }
+    System.out.println(linkedListWriteByMe);
+    linkedListWriteByMe.add(3, 6);
+    System.out.println(linkedListWriteByMe);
+    linkedListWriteByMe.addLast(7);
+    System.out.println(linkedListWriteByMe);
+    linkedListWriteByMe.change(3, 10);
+    System.out.println(linkedListWriteByMe);
+    System.out.println(linkedListWriteByMe.find(2).getValue());
+    linkedListWriteByMe.remove(1);
+    System.out.println(linkedListWriteByMe);
+    linkedListWriteByMe.remove(0);
+    System.out.println(linkedListWriteByMe);
+    linkedListWriteByMe.remove(4);
+    System.out.println(linkedListWriteByMe);
   }
 
   public int getSize() {
@@ -33,7 +55,7 @@ public class linkedListWriteByMe <T> {
     }
     Node node = new Node(t);
     Node pre = head;
-    for(int i = 0; i < index - 1; i++) {
+    for (int i = 0; i < index - 1; i++) {
       pre = pre.next;
     }
     node.next = pre.next;
@@ -44,7 +66,7 @@ public class linkedListWriteByMe <T> {
   public void addLast(T t) {
     Node node = new Node(t);
     Node per = head;
-    for(int i = 0; i < size - 1; i++) {
+    for (int i = 0; i < size - 1; i++) {
       per = per.next;
     }
     per.next = node;
@@ -56,11 +78,11 @@ public class linkedListWriteByMe <T> {
       throw new IllegalArgumentException("wrong index");
     }
     Node node = head;
-    if(size == 1) {
+    if (size == 1) {
       node.setValue(t);
       head = node;
     }
-    for(int i = 0; i < index; i++) {
+    for (int i = 0; i < index; i++) {
       node = node.next;
     }
     node.setValue(t);
@@ -68,7 +90,7 @@ public class linkedListWriteByMe <T> {
 
   public Node find(int index) {
     Node node = head;
-    for(int i = 0; i < index; i++) {
+    for (int i = 0; i < index; i++) {
       node = node.next;
     }
     return node;
@@ -78,13 +100,13 @@ public class linkedListWriteByMe <T> {
     if (index > size || index < 0) {
       throw new IllegalArgumentException("wrong index");
     }
-    if(index == 0) {
+    if (index == 0) {
       head = head.next;
       size--;
       return;
     }
     Node pre = head;
-    for(int i = 0; i < index - 1; i++) {
+    for (int i = 0; i < index - 1; i++) {
       pre = pre.next;
     }
     pre.next = pre.next.next;
@@ -95,7 +117,7 @@ public class linkedListWriteByMe <T> {
   public String toString() {
     StringBuffer sb = new StringBuffer();
     Node node = head;
-    for(int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) {
       sb.append(node.value + " ");
       node = node.next;
     }
@@ -119,27 +141,6 @@ public class linkedListWriteByMe <T> {
     public void setValue(T value) {
       this.value = value;
     }
-  }
-
-  public static void main(String[] args) {
-    linkedListWriteByMe linkedListWriteByMe = new linkedListWriteByMe();
-    for(int i = 0; i < 5; i++) {
-      linkedListWriteByMe.addFirst(i);
-    }
-    System.out.println(linkedListWriteByMe);
-    linkedListWriteByMe.add(3,6);
-    System.out.println(linkedListWriteByMe);
-    linkedListWriteByMe.addLast(7);
-    System.out.println(linkedListWriteByMe);
-    linkedListWriteByMe.change(3,10);
-    System.out.println(linkedListWriteByMe);
-    System.out.println(linkedListWriteByMe.find(2).getValue());
-    linkedListWriteByMe.remove(1);
-    System.out.println(linkedListWriteByMe);
-    linkedListWriteByMe.remove(0);
-    System.out.println(linkedListWriteByMe);
-    linkedListWriteByMe.remove(4);
-    System.out.println(linkedListWriteByMe);
   }
 
 

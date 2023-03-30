@@ -30,7 +30,7 @@ public class quickSort {
     sort(array, j + 1, high);
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {6, 5, 2, 1, 8, 11, 0, 45, 23};
     sort(a, 0, a.length - 1);
     for (int i : a) {

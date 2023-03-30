@@ -3,32 +3,12 @@ package 栈和队列;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Queue <T> {
- private List<T> list = new ArrayList<>();
- private int index;
+public class Queue<T> {
 
- public void in(T t) {
-   list.add(t);
-   index++;
- }
+  private final List<T> list = new ArrayList<>();
+  private int index;
 
-  public void out() {
-    if (index > 0) {
-      list.remove(list.get(0));
-      index--;
-    }
-  }
-
-  @Override
-  public String toString() {
-    StringBuffer sb = new StringBuffer();
-    for(T t : list) {
-      sb.append(t);
-    }
-    return sb.toString();
-  }
-
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     //测试队列
     System.out.println("测试队列：");
@@ -46,6 +26,27 @@ public class Queue <T> {
     queue.in(5);
     System.out.println(queue);
 
+  }
+
+  public void in(T t) {
+    list.add(t);
+    index++;
+  }
+
+  public void out() {
+    if (index > 0) {
+      list.remove(list.get(0));
+      index--;
+    }
+  }
+
+  @Override
+  public String toString() {
+    StringBuffer sb = new StringBuffer();
+    for (T t : list) {
+      sb.append(t);
+    }
+    return sb.toString();
   }
 
 

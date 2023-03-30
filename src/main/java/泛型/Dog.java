@@ -1,7 +1,8 @@
 package 泛型;
 
-public class Dog extends Animal{
-  public Dog(String name, int leg){
+public class Dog extends Animal {
+
+  public Dog(String name, int leg) {
     super(name, leg);
   }
 

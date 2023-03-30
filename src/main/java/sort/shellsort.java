@@ -23,7 +23,7 @@ public class shellsort {
     return array;
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {6, 5, 2, 1, 8, 11, 0, 45, 23};
     ShellSort(a);
     for (int i : a) {

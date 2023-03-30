@@ -90,7 +90,7 @@ public class redixSort {
     return num == null || num.length == 0;
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {6, 5, 2, 1, 8, 11, 1, 45, 23, 100, 400, 23, 430, 243};
     radixSort(a);
     for (int i : a) {

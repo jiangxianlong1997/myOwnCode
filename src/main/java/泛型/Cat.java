@@ -1,8 +1,9 @@
 package 泛型;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
+
   public Cat(String name, int leg) {
-    super(name,leg);
+    super(name, leg);
   }
 
   @Override

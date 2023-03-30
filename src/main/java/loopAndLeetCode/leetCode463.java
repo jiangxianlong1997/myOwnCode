@@ -1,6 +1,6 @@
 package loopAndLeetCode;
 
-  //给定一个 row x col 的二维网格地图 grid ，其中：grid[i][j] = 1 表示陆地， grid[i][j] = 0 表示水域。
+//给定一个 row x col 的二维网格地图 grid ，其中：grid[i][j] = 1 表示陆地， grid[i][j] = 0 表示水域。
 //
 // 网格中的格子 水平和垂直 方向相连（对角线方向不相连）。整个网格被水完全包围，但其中恰好有一个岛屿（或者说，一个或多个表示陆地的格子相连组成的岛屿）。
 //
@@ -45,41 +45,41 @@ package loopAndLeetCode;
 // Related Topics 深度优先搜索 广度优先搜索 数组 矩阵 👍 496 👎 0
 
 
-  //leetcode submit region begin(Prohibit modification and deletion)
-  class leetCode463 {
-    //找到第一个是1的点，递归旁边的点，如果是0则边长+1
-    public int islandPerimeter(int[][] grid) {
-      int width = grid.length;
-      for (int i = 0; i < width; i++) {
-        for(int j = 0; j < grid[0].length; j++) {
-          if (grid[i][j] == 1) {
-            return calculateDFS(grid, i, j);
-          }
-        }
-      }
+//leetcode submit region begin(Prohibit modification and deletion)
+class leetCode463 {
+
+  public static int calculateDFS(int[][] grid, int y, int x) {
+    if (x < 0 || y < 0 || x >= grid[0].length || y >= grid.length) {
+      return 1;
+    }
+    if (grid[y][x] == 0) {
+      return 1;
+    }
+    if (grid[y][x] != 1) {
       return 0;
     }
-
-    public static int calculateDFS(int[][] grid, int y, int x) {
-      if (x < 0 || y < 0 || x >= grid[0].length || y >= grid.length) {
-        return 1;
-      }
-      if (grid[y][x] == 0) {
-        return 1;
-      }
-      if (grid[y][x] != 1) {
-        return 0;
-      }
-      grid[y][x] = 2;
-      return calculateDFS(grid, y + 1, x)
-          + calculateDFS(grid, y - 1, x)
-          + calculateDFS(grid, y, x + 1)
-          + calculateDFS(grid, y, x - 1);
-    }
-
-
-
+    grid[y][x] = 2;
+    return calculateDFS(grid, y + 1, x)
+        + calculateDFS(grid, y - 1, x)
+        + calculateDFS(grid, y, x + 1)
+        + calculateDFS(grid, y, x - 1);
   }
+
+  //找到第一个是1的点，递归旁边的点，如果是0则边长+1
+  public int islandPerimeter(int[][] grid) {
+    int width = grid.length;
+    for (int i = 0; i < width; i++) {
+      for (int j = 0; j < grid[0].length; j++) {
+        if (grid[i][j] == 1) {
+          return calculateDFS(grid, i, j);
+        }
+      }
+    }
+    return 0;
+  }
+
+
+}
 //leetcode submit region end(Prohibit modification and deletion)
 
 

@@ -1,0 +1,101 @@
+# 题解
+
+* c
+
+```c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
+    int flag = 0;   //进位符
+    struct ListNode* temp = l1;
+    struct ListNode* temp2 = l2;
+    struct ListNode* result = (struct ListNode*)malloc(sizeof(struct ListNode));
+    result->next = NULL;
+    struct ListNode* temp3 = result;
+    //相应位相加
+    while(temp != NULL && temp2 != NULL){
+        struct ListNode* every = (struct ListNode*)malloc(sizeof(struct ListNode));
+        every->val = temp->val + temp2->val;
+        //来自上一位的进位。
+        if(flag == 1){
+            every->val += 1;
+            flag = 0;
+        }
+        //判断本位是否需要进位。
+        if(every->val >= 10){
+            every->val = every->val % 10;
+            flag = 1;
+        }
+        every->next = NULL;
+        temp3->next = every;
+        temp3 = temp3->next;
+        temp = temp->next;
+        temp2 = temp2->next;
+    }
+    //两个数同位数，只需判断是否需要进位。
+    if(temp == NULL && temp2 == NULL){
+        if(flag == 1){
+            struct ListNode* every = (struct ListNode*)malloc(sizeof(struct ListNode));
+            every->val = 1;
+            every->next = NULL;
+            temp3->next = every;
+            return result->next;
+        }else{
+            return result->next;
+        }
+    }else if(temp != NULL){ //还剩l1的高位，需要结合进位一起判断。
+        temp3->next = temp;
+        while(flag == 1 && temp != NULL){
+            temp->val += 1;
+            if(temp->val >= 10){
+                temp->val %= 10;
+                temp = temp->next;
+            }else{
+                flag = 0;
+            }
+        }
+        if(flag == 1){
+            while(temp3->next != NULL) temp3 = temp3->next;
+            struct ListNode* every = (struct ListNode*)malloc(sizeof(struct ListNode));
+            every->val = 1;
+            every->next = NULL;
+            temp3->next = every;
+            return result->next;
+        }
+    }else{  //还剩l2的高位，需要结合进位一起判断。
+        temp3->next = temp2;
+        while(flag == 1 && temp2 != NULL){
+            temp2->val += 1;
+            if(temp2->val >= 10){
+                temp2->val %= 10;
+                temp2 = temp2->next;
+            }else{
+                flag = 0;
+            }
+        }
+        if(flag == 1){
+            while(temp3->next != NULL) temp3 = temp3->next;
+            struct ListNode* every = (struct ListNode*)malloc(sizeof(struct ListNode));
+            every->val = 1;
+            every->next = NULL;
+            temp3->next = every;
+            return result->next;
+        }
+    }
+    return result->next;
+}
+```
+
+# 要点
+
+0. 数字已经逆序组成链表，只需相同位数相加并且向前进位即可。
+1. 进位需要注意：
+   + 进位之后是否需要再进位。
+   + 再进位时如果位数已经超过之前给的两个中的最大位数。
+

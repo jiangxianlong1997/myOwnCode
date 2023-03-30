@@ -18,7 +18,7 @@ public class insertionSort {
     return array;
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {1, 3, 5, 2, 7, 10};
     insertionSort(a);
     for (int i : a) {

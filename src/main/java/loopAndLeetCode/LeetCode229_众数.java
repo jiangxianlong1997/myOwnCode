@@ -43,12 +43,13 @@ import java.util.Map;
 
 
 public class LeetCode229_众数 {
+
   //真正的众数
   public static List<Integer> majorityElement(int[] nums) {
     if (nums.length == 0) {
       return null;
     }
-    Map<Integer,Integer> map = new HashMap<>();
+    Map<Integer, Integer> map = new HashMap<>();
     for (int ele : nums) {
       if (map.containsKey(ele)) {
         map.put(ele, map.get(ele) + 1);
@@ -73,12 +74,18 @@ public class LeetCode229_众数 {
     return list;
   }
 
+  //
+  public static void main(String[] args) {
+    int[] nums = {1, 2, 3};
+    System.out.println(majorityElement(nums));
+  }
+
   //题目中的众数（自己写的）
   public List<Integer> solution(int[] nums) {
     if (nums.length == 0) {
       return null;
     }
-    Map<Integer,Integer> map = new HashMap<>();
+    Map<Integer, Integer> map = new HashMap<>();
     for (int ele : nums) {
       if (map.containsKey(ele)) {
         map.put(ele, map.get(ele) + 1);
@@ -89,18 +96,12 @@ public class LeetCode229_众数 {
 
     List<Integer> list = new ArrayList<>();
     for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-      if (nums.length/3 < entry.getValue()) {
+      if (nums.length / 3 < entry.getValue()) {
         list.add(entry.getKey());
       }
     }
 
     return list;
-  }
-
-  //
-  public static void main(String[] args) {
-    int[] nums = {1,2,3};
-    System.out.println(majorityElement(nums));
   }
 
 }

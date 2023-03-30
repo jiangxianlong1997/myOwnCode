@@ -13,7 +13,7 @@ public class hannota {
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     hanoi(4, 'A', 'B', 'C');
   }
 

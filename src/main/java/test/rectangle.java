@@ -1,8 +1,10 @@
 package test;
 
 public class rectangle {
-  private int length;
-  private int width;
+
+  private final int length;
+  private final int width;
+
   public rectangle(int length, int width) {
     this.length = length;
     this.width = width;

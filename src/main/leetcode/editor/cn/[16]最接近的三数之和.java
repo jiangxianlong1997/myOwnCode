@@ -36,8 +36,9 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int threeSumClosest(int[] nums, int target) {
 
-    }
+  public int threeSumClosest(int[] nums, int target) {
+
+  }
 }
 //leetcode submit region end(Prohibit modification and deletion)

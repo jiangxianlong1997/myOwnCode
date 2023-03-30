@@ -20,7 +20,7 @@ public class selectsort {
     return array;
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     int[] a = {6, 5, 2, 1, 8, 0};
     selectionsort(a);
     for (int i : a) {

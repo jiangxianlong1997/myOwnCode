@@ -9,7 +9,7 @@ public class invertedorder {
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     changeorder(456789);
   }
 }

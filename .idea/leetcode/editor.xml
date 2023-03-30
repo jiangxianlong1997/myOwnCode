@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[1012]至少有 1 位重复的数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/doc/content/[1012]至少有 1 位重复的数字.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1012" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[1012]至少有 1 位重复的数字.java" />
+              <option name="titleSlug" value="numbers-with-repeated-digits" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[11]盛最多水的容器.java">
           <value>
             <LeetcodeEditor>
@@ -25,13 +36,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[176]第二高的薪水.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/doc/content/[176]第二高的薪水.md" />
+              <option name="frontendQuestionId" value="leetcode.cn176" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[176]第二高的薪水.java" />
+              <option name="titleSlug" value="second-highest-salary" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[183]从不订购的客户.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/doc/content/[183]从不订购的客户.md" />
+              <option name="frontendQuestionId" value="leetcode.cn183" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[183]从不订购的客户.java" />
+              <option name="titleSlug" value="customers-who-never-order" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[1]两数之和.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/doc/content/[1]两数之和.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[1]两数之和.md" />
               <option name="frontendQuestionId" value="leetcode.cn1" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[1]两数之和.java" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[1]两数之和.java" />
               <option name="titleSlug" value="two-sum" />
             </LeetcodeEditor>
           </value>
@@ -39,10 +72,10 @@
         <entry key="$PROJECT_DIR$/src/main/leetcode/editor/cn/[2]两数相加.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/doc/content/[2]两数相加.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[2]两数相加.md" />
               <option name="frontendQuestionId" value="leetcode.cn2" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[2]两数相加.java" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[2]两数相加.java" />
               <option name="titleSlug" value="add-two-numbers" />
             </LeetcodeEditor>
           </value>
@@ -77,6 +110,83 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/leetcode/editor/cn/[5]最长回文子串.java" />
               <option name="titleSlug" value="longest-palindromic-substring" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[13]罗马数字转整数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[13]罗马数字转整数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn13" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[13]罗马数字转整数.java" />
+              <option name="titleSlug" value="roman-to-integer" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[14]最长公共前缀.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[14]最长公共前缀.md" />
+              <option name="frontendQuestionId" value="leetcode.cn14" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[14]最长公共前缀.java" />
+              <option name="titleSlug" value="longest-common-prefix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[1]两数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[1]两数之和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[1]两数之和.java" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[2274]不含特殊楼层的最大连续楼层数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[2274]不含特殊楼层的最大连续楼层数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2274" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[2274]不含特殊楼层的最大连续楼层数.java" />
+              <option name="titleSlug" value="maximum-consecutive-floors-without-special-floors" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[2]两数相加.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[2]两数相加.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[2]两数相加.java" />
+              <option name="titleSlug" value="add-two-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[53]最大子数组和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[53]最大子数组和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn53" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[53]最大子数组和.java" />
+              <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[9]回文数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/doc/content/[9]回文数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn9" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/leetcode/leetcode/editor/cn/[9]回文数.java" />
+              <option name="titleSlug" value="palindrome-number" />
             </LeetcodeEditor>
           </value>
         </entry>

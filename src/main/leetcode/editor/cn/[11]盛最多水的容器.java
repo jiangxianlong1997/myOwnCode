@@ -37,10 +37,12 @@
 // Related Topics 贪心 数组 双指针 👍 4114 👎 0
 
 import java.util.*;
+
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int maxArea(int[] height) {
-        ArrayList<>
-    }
+
+  public int maxArea(int[] height) {
+    ArrayList<>
+  }
 }
 //leetcode submit region end(Prohibit modification and deletion)

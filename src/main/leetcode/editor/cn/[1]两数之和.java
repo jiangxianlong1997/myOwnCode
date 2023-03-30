@@ -45,11 +45,13 @@
 //
 // Related Topics 数组 哈希表 👍 16420 👎 0
 
-
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
 
-    }
+  public int[] twoSum(int[] nums, int target) {
+
+    return null;
+  }
 }
+
 //leetcode submit region end(Prohibit modification and deletion)

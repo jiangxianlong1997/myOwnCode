@@ -3,6 +3,7 @@
 h1, h2, h3, nav, footer {
   font-family: Georgia, Cambria, "Times New Roman", serif;
 }
+
 body {
   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 85%;
@@ -15,7 +16,7 @@ table {
   margin: 0 auto;
 }
 
-table tbody td{
+table tbody td {
   /* border: 1pt solid #95BEF0;   */
   line-height: 1.5em;
   vertical-align: top;
@@ -23,7 +24,7 @@ table tbody td{
 }
 
 legend {
-  background-color: #EBF4FB ;
+  background-color: #EBF4FB;
   margin: 0 auto;
   width: 90%;
   padding: 0.25em;
@@ -31,11 +32,13 @@ legend {
   font-weight: bold;
   font-size: 100%;
 }
+
 fieldset {
   margin: 1em auto;
   background-color: #FAFCFF;
   width: 60%;
 }
+
 form p {
   margin-top: 0.5em;
 }
@@ -50,6 +53,7 @@ form p {
   background-color: #EBF4FB;
   padding: 0.5em;
 }
+
 .centered {
   text-align: center;
 }
@@ -67,6 +71,7 @@ form p {
   -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3;
   box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3;
 }
+
 .rounded:hover {
   background-color: #7f8dad;
 }

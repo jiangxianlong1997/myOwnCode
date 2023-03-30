@@ -33,13 +33,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode169_多数元素 {
+
   public static int majorityElement(int[] nums) {
-    if(nums.length == 0) {
+    if (nums.length == 0) {
       return -1;
     }
     Map<Integer, Integer> map = new HashMap();
     for (int ele : nums) {
-      if(map.containsKey(ele)) {
+      if (map.containsKey(ele)) {
         map.put(ele, map.get(ele) + 1);
       } else {
         map.put(ele, 1);
@@ -47,8 +48,8 @@ public class LeetCode169_多数元素 {
     }
     int max = Integer.MIN_VALUE;
     int result = Integer.MIN_VALUE;
-    for(Map.Entry<Integer, Integer> entry: map.entrySet()){
-      if(max < entry.getValue()) {
+    for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+      if (max < entry.getValue()) {
         max = entry.getValue();
         result = entry.getKey();
       }
@@ -59,17 +60,17 @@ public class LeetCode169_多数元素 {
   //简单排序
   public static int Solution2(int[] nums) {
     Arrays.sort(nums);
-    return nums[nums.length/2];
+    return nums[nums.length / 2];
   }
 
   //Boyer-Moore 摩尔投票算法
   public static int Solution3(int[] nums) {
     Arrays.sort(nums);
-    return nums[nums.length/2];
+    return nums[nums.length / 2];
   }
 
   public static void main(String[] args) {
-    int[] nums = {1,2,1};
+    int[] nums = {1, 2, 1};
     System.out.println(Solution2(nums));
   }
 }

@@ -42,7 +42,7 @@ public class overridesortofArrayList {
     );
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     ArrayList<String> list = new ArrayList<String>();
     list.add("15");
     list.add("34");

@@ -26,7 +26,7 @@ public class myHeapsort {
   }
 
   public static void main(String[] args) {
-    int a[] = {1, 45, 7, 3, 7, 34, 8, 2, 11};
+    int[] a = {1, 45, 7, 3, 7, 34, 8, 2, 11};
     heapSort(a, a.length);
     for (int i : a) {
       System.out.println(i);

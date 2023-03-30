@@ -3,11 +3,11 @@
 <head lang="en">
   <meta charset="utf-8">
   <title>week 3 tutorial</title>
-  <link rel="stylesheet" href="week3.css" />
-  <script type="text/javascript" src="week3.js"></script>
+  <link href="week3.css" rel="stylesheet"/>
+  <script src="week3.js" type="text/javascript"></script>
 </head>
 <body>
-<form method="get" action="" id="mainForm">
+<form action="" id="mainForm" method="get">
   <fieldset>
     <legend>Photo Details</legend>
     <table>
@@ -15,11 +15,11 @@
         <td colspan="2">
           <p>
             <label>Title</label><br/>
-            <input type="text" name="title" size="80" class="required" />
+            <input class="required" name="title" size="80" type="text"/>
           </p>
           <p>
             <label>Description</label><br/>
-            <textarea name="description" rows="5" cols="61" class="required"></textarea>
+            <textarea class="required" cols="61" name="description" rows="5"></textarea>
           </p>
         </td>
       </tr>
@@ -47,7 +47,7 @@
           </p>
           <p>
             <label>City</label><br/>
-            <input type="text" name="city" list="cities"  size="40"/>
+            <input list="cities" name="city" size="40" type="text"/>
             <datalist id="cities">
               <option>Calgary</option>
               <option>Montreal</option>
@@ -59,23 +59,23 @@
         <td>
           <div class="box">
             <label>Copyright? </label><br/>
-            <input type="radio" name="copyright" value="1">All rights reserved<br/>
-            <input type="radio" name="copyright" value="2" checked>Creative Commons<br/>
+            <input name="copyright" type="radio" value="1">All rights reserved<br/>
+            <input checked name="copyright" type="radio" value="2">Creative Commons<br/>
           </div>
           <div class="box">
             <label>Creative Commons Types </label><br/>
-            <input type="checkbox" name="cc" >Attribution <br/>
-            <input type="checkbox" name="cc" >Noncommercial <br/>
-            <input type="checkbox" name="cc" >No Derivative Works <br/>
-            <input type="checkbox" name="cc" >Share Alike
+            <input name="cc" type="checkbox">Attribution <br/>
+            <input name="cc" type="checkbox">Noncommercial <br/>
+            <input name="cc" type="checkbox">No Derivative Works <br/>
+            <input name="cc" type="checkbox">Share Alike
           </div>
         </td>
       </tr>
       <tr>
-        <td colspan="2" >
+        <td colspan="2">
           <div class="rectangle">
             <label>I accept the software license</label>
-            <input type="checkbox" name="accept" class="required">
+            <input class="required" name="accept" type="checkbox">
           </div>
         </td>
       </tr>
@@ -83,22 +83,22 @@
         <td>
           <p>
             <label>Rate this photo: <br/>
-              <input type="number" min="1" max="5" name="rate" />
+              <input max="5" min="1" name="rate" type="number"/>
           </p>
           <p>
             <label>Color Collection: <br/>
-              <input type="color"  name="color" />
+              <input name="color" type="color"/>
           </p>
         </td>
         <td>
           <div class="box">
             <p>
               <label>Date Taken: <br/>
-                <input type="date"  name="date" />
+                <input name="date" type="date"/>
             </p>
             <p>
               <label>Time Taken: <br/>
-                <input type="time"  name="time" />
+                <input name="time" type="time"/>
             </p>
           </div>
         </td>
@@ -106,7 +106,8 @@
       <tr>
         <td colspan="2">
           <div class="rectangle centered">
-            <input type="submit" class="rounded"> <input type="reset" value="Clear Form" class="rounded">
+            <input class="rounded" type="submit"> <input class="rounded" type="reset"
+                                                         value="Clear Form">
           </div>
         </td>
       </tr>
