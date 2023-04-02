@@ -16,7 +16,7 @@ public class Main {
     node1.add(9);
     node1.add(9);
     node1.add(9);
-    //node.print();
+    node.print();
 
   }
 }
