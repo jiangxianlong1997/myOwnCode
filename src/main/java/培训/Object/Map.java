@@ -15,8 +15,8 @@ public class Map {
 
 
   public boolean crash(Hero hero, Dog dog) {
-    return hero.getXposition() <= (dog.getXposition() + dog.getVolume())
-        && (hero.getXposition() + hero.getVolume()) >= dog.getXposition()
+    return hero.getXposition() <= (dog.getXPosition() + dog.getVolume())
+        && (hero.getXposition() + hero.getVolume()) >= dog.getXPosition()
         && (hero.getYposition() + hero.getVolume()) >= dog.getYposition()
         && hero.getYposition() <= (dog.getYposition() + dog.getVolume());
   }

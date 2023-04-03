@@ -23,7 +23,7 @@ public class Dog {
     this.position[0] += 1;
   }
 
-  public int getXposition() {
+  public int getXPosition() {
     return position[0];
   }
 

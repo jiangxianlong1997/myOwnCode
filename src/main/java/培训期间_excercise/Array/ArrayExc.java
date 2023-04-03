@@ -55,7 +55,7 @@ public class ArrayExc {
     //向队列中加入节点 int[]{nx, ny} 表示其位置
     while (!queue.isEmpty()) {
      int dist = distance.poll();
-     int cur[] = queue.poll();
+     int[] cur = queue.poll();
      int x = cur[0];
      int y = cur[1];
 

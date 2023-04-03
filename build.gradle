@@ -5,9 +5,10 @@ plugins {
 group 'myOwnCode'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 14
 
 repositories {
     mavenCentral()
 }
 
+targetCompatibility = JavaVersion.VERSION_14

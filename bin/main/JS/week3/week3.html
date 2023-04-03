@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>week 3 tutorial</title>
+  <link href="week3.css" rel="stylesheet"/>
+  <script src="week3.js" type="text/javascript"></script>
+</head>
+<body>
+<form action="" id="mainForm" method="get">
+  <fieldset>
+    <legend>Photo Details</legend>
+    <table>
+      <tr>
+        <td colspan="2">
+          <p>
+            <label>Title</label><br/>
+            <input class="required" name="title" size="80" type="text"/>
+          </p>
+          <p>
+            <label>Description</label><br/>
+            <textarea class="required" cols="61" name="description" rows="5"></textarea>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <label>Continent</label><br/>
+            <select name="continent">
+              <option>Choose continent</option>
+              <option>Africa</option>
+              <option>Asia</option>
+              <option>Europe</option>
+              <option>North America</option>
+              <option>South America</option>
+            </select>
+          </p>
+          <p>
+            <label>Country</label><br/>
+            <select name="country">
+              <option>Choose country</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+              <option>United States</option>
+            </select>
+          </p>
+          <p>
+            <label>City</label><br/>
+            <input list="cities" name="city" size="40" type="text"/>
+            <datalist id="cities">
+              <option>Calgary</option>
+              <option>Montreal</option>
+              <option>Toronto</option>
+              <option>Vancouver</option>
+            </datalist>
+          </p>
+        </td>
+        <td>
+          <div class="box">
+            <label>Copyright? </label><br/>
+            <input name="copyright" type="radio" value="1">All rights reserved<br/>
+            <input checked name="copyright" type="radio" value="2">Creative Commons<br/>
+          </div>
+          <div class="box">
+            <label>Creative Commons Types </label><br/>
+            <input name="cc" type="checkbox">Attribution <br/>
+            <input name="cc" type="checkbox">Noncommercial <br/>
+            <input name="cc" type="checkbox">No Derivative Works <br/>
+            <input name="cc" type="checkbox">Share Alike
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="rectangle">
+            <label>I accept the software license</label>
+            <input class="required" name="accept" type="checkbox">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <label>Rate this photo: <br/>
+              <input max="5" min="1" name="rate" type="number"/>
+          </p>
+          <p>
+            <label>Color Collection: <br/>
+              <input name="color" type="color"/>
+          </p>
+        </td>
+        <td>
+          <div class="box">
+            <p>
+              <label>Date Taken: <br/>
+                <input name="date" type="date"/>
+            </p>
+            <p>
+              <label>Time Taken: <br/>
+                <input name="time" type="time"/>
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="rectangle centered">
+            <input class="rounded" type="submit"> <input class="rounded" type="reset"
+                                                         value="Clear Form">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+</body>
+</html>

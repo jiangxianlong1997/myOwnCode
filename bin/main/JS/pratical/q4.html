@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+<form action=countryCodes.js method=get>
+  Select a country:
+  <div id="country"></div>
+  <script>
+    var countries = [
+      {code: "AR", name: "Argentina", capital: "Buenos Aires"},
+      {code: "AT", name: "Austria", capital: "Vienna"},
+      {code: "BE", name: "Belgium", capital: "Brussels"},
+      {code: "CA", name: "Canada", capital: "Ottawa"}
+    ];
+    for (let i = 0; i < countries.length; i++) {
+      //$("#country").parentNode.innerHTML(country)
+      document.getElementById(
+          "country").innerHTML += "<input type=\"radio\" name=\"country\" value=\""
+          + countries[i].code + "\" id=\"" + countries[i].code + "\">" + countries[i].name + "<br>"
+    }
+
+  </script>
+  <div id="capital_city"></div>
+  <script>
+    //$("#country").parentNode.innerHTML(country)
+    document.getElementById("AR").onclick = function () {
+      document.getElementById("capital_city").innerText = "Buenos Aires"
+    }
+    document.getElementById("AT").onclick = function () {
+      document.getElementById("capital_city").innerText = "Vienna"
+    }
+    document.getElementById("BE").onclick = function () {
+      document.getElementById("capital_city").innerText = "Brussels"
+    }
+    document.getElementById("CA").onclick = function () {
+      document.getElementById("capital_city").innerText = "Ottawa"
+    }
+
+  </script>
+</form>
+
+</body>
+</html>

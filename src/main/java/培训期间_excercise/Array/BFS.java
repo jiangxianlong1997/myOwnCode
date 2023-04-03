@@ -3,11 +3,12 @@ package 培训期间_excercise.Array;
 import java.util.LinkedList;
 import java.util.Queue;
 
+//this is a wrong BFS
 public class BFS {
 
   /**
    * 这个bfs访问的是graph的第target行的第一个1
-   * @param graph
+   * @param graph input map
    * @param start
    * @param target
    */
@@ -18,6 +19,7 @@ public class BFS {
     //加入起点
     queue.offer(start);
     visited[start] = true;
+    int distance = 0;
 
     //对队列中所有节点遍历
     while (!queue.isEmpty()) {
@@ -37,6 +39,8 @@ public class BFS {
           System.out.println(queue);
           visited[i] = true;
           System.out.println("node : " + node + " i: " + i);
+          distance++;
+          System.out.println(distance);
         }
 
         }
@@ -64,7 +68,7 @@ public class BFS {
     };
 
     // 调用 BFS 算法，并指定起点和目标节点
-    bfs(graph, 0, 6);
+    bfs(graph, 0, 3);
 
   }
 

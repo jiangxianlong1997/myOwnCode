@@ -11,7 +11,7 @@ public class Main {
     new_dog.call();
     new_dog.run();
     System.out.print("当前位置: ");
-    System.out.print("x: " + new_dog.getXposition());
+    System.out.print("x: " + new_dog.getXPosition());
     System.out.println(" y: " + new_dog.getYposition());
     System.out.println("狗的生命: " + new_dog.getHp());
     if (map.crash(new_hero, new_dog)) {
