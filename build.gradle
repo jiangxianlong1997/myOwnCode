@@ -1,3 +1,4 @@
+
 plugins {
     id 'java'
 }
@@ -10,5 +11,13 @@ sourceCompatibility = 14
 repositories {
     mavenCentral()
 }
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+
 
 targetCompatibility = JavaVersion.VERSION_14

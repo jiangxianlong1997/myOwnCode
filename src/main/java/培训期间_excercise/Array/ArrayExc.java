@@ -22,6 +22,7 @@ import java.util.Queue;
  */
 public class ArrayExc {
 
+
   /**
    * 最短路径solution: BFS 广度优先搜索
    * @param board 地图
@@ -63,7 +64,9 @@ public class ArrayExc {
      if (x == width - 1 && y == length - 1) {
        return dist;
      }
-     //判断相邻节点是否为"."
+     //判断相邻节点是否为"."，并且没有被访问过
+
+
 
 
     }
@@ -81,6 +84,14 @@ public class ArrayExc {
   }
 
   public static void main(String[] args) {
-
+    String[][] board = {
+        {".",".",".",".","#"},
+        {"#",".","#",".","."},
+        {".",".",".",".","."},
+        {".","#","#",".","."},
+        {".",".",".",".","."}
+    };
+    ArrayExc arrayExc = new ArrayExc();
+    System.out.println(arrayExc.BFS(board));
   }
 }

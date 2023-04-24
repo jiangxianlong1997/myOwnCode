@@ -58,8 +58,8 @@ class Q1 {
     int i = 0;
     for (int element : nums
     ) {
-      if (map.containsKey(target - element)) {
-        return new int[]{map.get(target - element), i};
+      if (map.containsKey((Integer) (target - element))) {
+        return new int[]{map.get((Integer) (target - element)), i};
       }
       map.put(element, i);
       i++;

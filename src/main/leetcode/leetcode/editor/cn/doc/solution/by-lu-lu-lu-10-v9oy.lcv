@@ -1,0 +1,35 @@
+**耗时一小时终于看明白了，感谢评论区，个人见解整理如下：**
+- - 由题意知，数组可以分为nums[A],nums[B],nums[C]三部分;
+    目的是找到最小范围的nums[B],只对该部分排序，整个数组即有序;
+    可知 nums[A]中元素有序且小于nums[B]中元素;
+    可知 nums[C]中元素有序且大于nums[B]中元素;
+
+如何确定nums[B]的范围`[left,right]`？
+1. nums[B]是无序的，nums[B]中**最小元素左侧**可能有比其大的，**最大元素右侧**可能有比其小的；
+2. 初始最小元素min为Integer.MAX_VALUE，倒序遍历数组，如果当前元素比最小元素小，更新min;
+   如果当前元素比最小元素大，就说明其是nums[B]的一部分，动态维护nums[B]左边界left;
+3. 初始最大元素max为Integer.MIN_VALUE，正序遍历数组，如果当前元素比最大元素大，更新max;
+   如果当前元素比最大元素小，就说明其是nums[B]的一部分，动态维护nums[B]右边界right;
+4. 返回最短长度right-left+1;
+5. 由于初始时left=-1，right=-1,如果整体有序，right和left保持-1，对于有序数组需要单独判断，返回0;
+
+代码：
+
+* []
+
+```java
+int left = -1,right = -1,min = Integer.MAX_VALUE,max = Integer.MIN_VALUE,length;
+    public int findUnsortedSubarray(int[] nums) {
+        length = nums.length;
+        for(int i = 0;i< length;i++){
+            if(nums[i] < max) right = i;
+            else max = nums[i];
+        }
+        for(int i = length-1;i >= 0;i--){
+            if(nums[i] > min) left = i;
+            else min = nums[i];
+        }
+        return right == -1 ? 0 : right - left + 1;
+    }
+```
+

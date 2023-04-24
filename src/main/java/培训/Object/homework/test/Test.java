@@ -3,6 +3,9 @@ package 培训.Object.homework.test;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Test {
 
@@ -29,7 +32,9 @@ public class Test {
     ) {
       System.out.println(o);
     }
-
+    Queue<Integer> queue = new LinkedList<>();
+    queue.poll();
+    Stack<Integer> stack = new Stack<>();
   }
 
 }

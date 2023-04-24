@@ -13,7 +13,7 @@ public class Q9 {
     StringBuilder stringBuffer_rev = new StringBuilder();
     stringBuffer_rev.append(x);
     stringBuffer_rev.reverse();
-    return String.valueOf(x).equals(stringBuffer_rev.toString());
+    return String.valueOf(x).contentEquals(stringBuffer_rev);
   }
 
   //my solution2, math
