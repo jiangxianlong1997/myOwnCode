@@ -1,0 +1,23 @@
+栈A为输入栈，栈B为输出栈，输入时向栈A中传入数据，输出时，先判断栈B是否有数据，有则弹出B栈顶数据，没有则判断栈A是否存有数据，没有返回-1，有则栈B中存入此时栈A所有数据(让栈B把数据都弹完之后，再压入栈A数据，不容易乱)
+class CQueue {
+Stack<Integer>A, B;
+public CQueue() {
+A = new Stack<Integer>();
+B = new Stack<Integer>();
+}
+
+    public void appendTail(int value) {
+        A.push(value);
+    }
+    
+    public int deleteHead() {
+        if(!B.empty()){
+            return B.pop();
+        }if (A.empty()){
+            return -1;
+        }
+        while(!A.empty()){B.push(A.pop());}
+        return B.pop();
+    }
+
+}
